@@ -1,43 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="eng">
 <head>
-    <title> Fernando's Portfolio Page</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Added the bootstrap CDN for now -->
+    <link rel="stylesheet" href="Stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="Stylesheet.css" >
+
 </head>
-<body >
-<nav class="navbar navbar-inverse navbar-static-top">
-    <div class="container" >
-        <div class="navbar-header" >
-            Fernando
+
+<body class="image">
+    <nav class="navbar navbar-dark navbar-expand-md bg-dark justify-content-center">
+        <a href="/" class="navbar-brand mr-0">Fernando Ruiz</a>
+        <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsingNavbar2">
+            <ul class="navbar-nav mx-auto text-center">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home-section">About <span class="sr-only">Home</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#portfolio-link">Portfolio</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#contact-me">Cantact</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav flex-row justify-content-center flex-nowrap">
+                <li class="nav-item active"><a class="nav-link" href="https://github.com/linuxuser07"><i class="fa fa-github mr-1"></i></a> </li>
+                <li class="nav-item active"><a class="nav-link" href="https://www.freecodecamp.org/linuxuser07"><i class="fa fa-free-code-camp"></i></a> </li>
+            </ul>
         </div>
-        <ul class="nav navbar-nav">
-            <li><a href="#home-section">Home</a></li>
-            <li><a href="#work-link">Work</a></li>
-            <li><a href="#contact-me">Contact Me</a></li>
-        </ul>
+    </nav>
+    <div class="padding"><a name="home-section"></a>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="Images/taco2.jpg">
+                </div>
+                <div class="col-sm-6 text-center">
+                    <h2>some text here </h2>
+                    <p class="leat">some text here</p>
+                </div>
+            </div>
+        </div>
+
     </div>
-</nav>
-<div class="firs-section"><a name="home-section"></a>
-    <img src="Images/taco1.jpg">
-</div>
-<div class="second-section"><a name="work-link"></a>
-    <img src="Images/taco2.jpg">
-</div>
-<div class="third-section"><a name="contact-me"></a><img src="Images/taco3.jpg"></div>
+    <div class="second-section"><a name="portfolio-link"></a>
+        <img src="Images/taco2.jpg">
+    </div>
+    <div class="third-section"><a name="contact-me"></a><img src="Images/taco3.jpg"></div>
 </body>
 <footer>
     Crated By me
 </footer>
-<script>
-    function showDiv() {
-        
-    }
-</script>
+</body>
 </html>

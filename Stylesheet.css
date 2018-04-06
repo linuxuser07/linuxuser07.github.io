@@ -1,42 +1,10 @@
-.navbar, .navbar-inverse{
-    border-radius: 0px;
-    border: none;
-    margin-bottom: 0px;
-    min-height: 80px;
-}
-.nav, li{
-    display: inline;
-    color: white;
+.abs-center-x {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.navbar-inverse .navbar-nav > li > a{
-    color: #ffffff;
-    font-family: Lato;
-    font-size: 1.7em;
-    font-weight: 300;
-    padding: 30px 25px 33px 25px;
-}
-.navbar-inverse .navbar-nav li a:hover {
-    background-color: #444444;
-    transition: 0.7s all linear;
-    height: 100%;
-}
-.firs-section{
-    display: block;
-    margin-top: 50px;
-    background-color: black;
-}
-.second-section{
-    display: block;
-    margin-top: 50px;
-    background-color: black;
-}
-
-.third-section{
-    display: block;
-    margin-top: 50px;
-    background-color: black;
-}
-body{
-    background-color: #3ee1ff;
+img{
+    max-width: 100%;
+    height: auto;
 }
