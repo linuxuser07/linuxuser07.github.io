@@ -5,80 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Fernandos Porfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="Stylesheet.css" />
     
 </head>
 <body>
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
         <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Fernando</a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                </button>
+            <a class="navbar-brand" href="#">Fernando Ruiz</a>
           </div>
       
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#contact">Contact Me</a></li>
+              <li><a data-scroll href="#projects">Projects</a></li>
+              <li><a  data-scroll href="#skills">Skills</a></li>
+              <li><a  data-scroll href="#contact">Contact Me</a></li>
             </ul>
           </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
       </nav>
+    </div><!-- /.container-fluid -->
 
       <!--jumbotron section-->
-      <div class="jumbotron">
-          <div class="container">
-            <h1>helloWord</h1>
-            <p>ipsom</p>
-            <a href="#projects" class="btn btn-primary">learn More</a>
-            </div>
+      <div class="jumbotron" >
+          <div class="container text-center">
+              <img src="./Images/me.jpg" alt="Profile picture" class="img-rounded">
+            <h1>Fernando Ruiz</h1>
+            <p>My name is fernando, I found my passion for programming while working in the IT world and working with infrastructure. I took from advance JAVA to advanced C++ currently 
+                working on free code camp front end to get a better understanding on how frontend works.
+            </p>
+            <a href="#projects" class="btn btn-primary">Projects</a>
+            </div>    
         </div>
         <!--Project section-->
-        <section id="projects">
+        <div id="projects">
             <div class="container">
                     <h2 class="text-center">Projects</h2>
                 <div class="row app-row">
                     <div class="col-md-6 app-image-wrapper">
-                        <img src="http://www.qygjxz.com/data/out/193/4094485-random-picture.gif" alt="" class="img-responsive app-image">
+                        <img src="./Images/TeslaNiKolaImg.png" alt="Tribute Page Nikola Tesla" class="img-responsive app-image">
                     </div>
                     <div class="col-md-6 app-description">
-                        <h3>Clever Title</h3>
-                        <p>Lorem</p>
-                        <a href="#" class="btn btn-primary app-link">app</a><a href="" class="btn btn-primary">Source Code</a>
+                        <h3>Tribute Page for Free Code Camp</h3>
+                        <p>This is a tribute page for Free code camp, building a simple Tribute page. </p>
+                        <a href="https://codepen.io/FernandoRuiz07/pen/pRbMJW" class="btn btn-primary app-link">app</a><a href="https://codepen.io/FernandoRuiz07/pen/pRbMJW" class="btn btn-primary">Source Code</a>
                     </div>
                 </div>
                 <div class="row app-row">
                         <div class="col-md-6 app-image-wrapper">
-                            <img src="http://www.qygjxz.com/data/out/193/4094485-random-picture.gif" alt="" class="img-responsive app-image">
+                            <img src="./Images/voidbits.png" alt="voidbits Page Logo" class="img-responsive app-image">
                         </div>
                         <div class="col-md-6 app-description">
-                            <h3>Clever Title</h3>
-                            <p>Lorem</p>
-                            <a href="#" class="btn btn-primary app-link">app</a><a href="" class="btn btn-primary">Source Code</a>
+                            <h3>Voidbits website</h3>
+                            <p>This is a page that we created using wordpress we used a temple and modified the plugins for our needs, we currently use it for business purposes.</p>
+                            <a href="https://www.voidbits.com/" class="btn btn-primary app-link">website</a>
                         </div>
                     </div>
                     <div class="row app-row">
                             <div class="col-md-6 app-image-wrapper">
-                                <img src="http://www.qygjxz.com/data/out/193/4094485-random-picture.gif" alt="" class="img-responsive app-image">
+                                <img src="./Images/voidbits.png" alt="voidbits page logo" class="img-responsive app-image">
                             </div>
                             <div class="col-md-6 app-description">
-                                <h3>Clever Title</h3>
-                                <p>Lorem</p>
-                                <a href="#" class="btn btn-primary app-link">app</a><a href="" class="btn btn-primary">Source Code</a>
+                                <h3>Vue Application</h3>
+                                <p>This is a office management software that I and a coworker are currently working on, this will help bookeeping offices keep track of their customers. 
+                                    and their documentation that they need to fullfill the tax or the Bookeeping process. 
+                                </p>
+                                <a href="https://project.voidbits.com" class="btn btn-primary app-link">app</a>
                             </div>
                         </div>
             </div>
-        </section>
+        </div>
 
         <section id="skills">
             <div class="container">
@@ -97,27 +104,24 @@
         <section id="contact">
             <div class="container">
             <h2 class="text-center">Contact Me</h2>
-            <p class="text-center">Email me @ someone@example</p>
+            <p class="text-center">fernando@voidbits.com</p>
             </div>
         </section>
 
         <footer>
             <div class="container">
                 <div class="social-icons">
-                    <a href="#" class="img-responseive social-icon"><i class="fab fa-linkedin fa-3x"></i></a>
-                    <a href="#" class="img-responseive social-icon"><i class="fab fa-twitter-square fa-3x" style="color: #00aced"></i></a>
-                    <a href="#" class="img-responseive social-icon"><i class="fab fa-github fa-3x" style="color: black"></i></a>
+                    <a href="https://www.linkedin.com/in/fernandoruiz07" class="img-responseive social-icon"><i class="fab fa-linkedin fa-3x"></i></a>
+                    <a href="https://github.com/linuxuser07" class="img-responseive social-icon"><i class="fab fa-github fa-3x" style="color: black"></i></a>
                 </div>
-                <p class="copyright text-center">&copy; 2018Fernando Ruiz</p>
+                <p class="copyright text-center">&copy; 2018 Fernando Ruiz</p>
             </div>
         </footer>
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script
-			  src="https://code.jquery.com/jquery-3.3.1.min.js"
-			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-			  crossorigin="anonymous"></script>
-    <script src="app.js">
+    <script src="app.js"></script>
+    <script src="./js/smooth-scroll.polyfills.min.js">
+    </script>
+    <script>
+           var scroll = new SmoothScroll('a[href*="#"]');
     </script>
 </body>
 </html>
